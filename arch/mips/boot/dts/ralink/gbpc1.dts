@@ -110,7 +110,7 @@
 
 &cpuclock {
 			compatible = "fixed-clock";
-			clock-frequency = <900000000>;
+			clock-frequency = <880000000>;
 };
 
 &pcie {
