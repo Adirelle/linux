@@ -101,8 +101,6 @@ gnubee_boot(){
    echo "/sbin/mdev" > /proc/sys/kernel/hotplug
    mdev -s
 
-   echo -n ""
-
    echo -n "Waiting disk spinup..." > /dev/kmsg
    sleep 3
    echo "done." > /dev/kmsg
@@ -114,7 +112,7 @@ gnubee_boot(){
 	   mdadm --assemble --scan --auto=md --run --freeze-reshape
    fi
 
-   echo -n "Searching for partition GNUBEE-ROOT..." > /dev/kmsg
+   echo "Searching for partition GNUBEE-ROOT..." > /dev/kmsg
 
    sleep 1
 
